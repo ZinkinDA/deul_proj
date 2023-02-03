@@ -1,7 +1,7 @@
 package com.example.kr_deulin_2.controller;
 
 
-import com.example.kr_deulin_2.model.Enums.Services;
+import com.example.kr_deulin_2.model.Services;
 import com.example.kr_deulin_2.model.Fsm;
 import com.example.kr_deulin_2.services.FsmService;
 import org.springframework.beans.factory.annotation.Autowired;

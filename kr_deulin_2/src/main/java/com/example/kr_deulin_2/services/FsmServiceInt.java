@@ -1,7 +1,7 @@
 package com.example.kr_deulin_2.services;
 
 
-import com.example.kr_deulin_2.model.Enums.Services;
+import com.example.kr_deulin_2.model.Services;
 import com.example.kr_deulin_2.model.Fsm;
 
 import java.util.List;

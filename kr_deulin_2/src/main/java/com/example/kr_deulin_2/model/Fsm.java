@@ -1,9 +1,7 @@
 package com.example.kr_deulin_2.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonView;
 import com.example.kr_deulin_2.model.Enums.Event;
-import com.example.kr_deulin_2.model.Enums.Services;
 import com.example.kr_deulin_2.model.Enums.Statement;
 import org.springframework.stereotype.Component;
 
