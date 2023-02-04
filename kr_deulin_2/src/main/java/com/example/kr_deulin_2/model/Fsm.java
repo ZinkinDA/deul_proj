@@ -124,7 +124,7 @@ public class Fsm {
                 System.err.println("On Water.\nPlease wait 6 second.");
                 statement = Statement.WATER;
                 this.isTheWaterOn = true;
-                Thread.sleep(6000);
+                Thread.sleep(60000);
                 this.isTheWaterOn = false;
                 statement = Statement.READY;
             }
@@ -135,7 +135,7 @@ public class Fsm {
                 System.out.println("On Foam.\nPlease wait 6 second.");
                 statement = Statement.FOAM;
                 this.isFoamIncluded = true;
-                Thread.sleep(6000);
+                Thread.sleep(60000);
                 System.out.println("Выключаем пену");
                 this.isFoamIncluded = false;
                 statement = Statement.READY;
@@ -147,7 +147,7 @@ public class Fsm {
                 System.out.println("On Wax.\nPlease wait 4 second.");
                 statement = Statement.WAX;
                 this.isWaxCoating = true;
-                Thread.sleep(4000);
+                Thread.sleep(40000);
                 statement = Statement.READY;
                 this.isWaxCoating = false;
             }
@@ -158,7 +158,7 @@ public class Fsm {
                 System.out.println("On drying.\nPlease wait 6 second.");
                 statement = Statement.DRYING;
                 this.isDryingMachine = true;
-                Thread.sleep(6000);
+                Thread.sleep(60000);
                 statement = Statement.READY;
                 this.isDryingMachine = false;
             }

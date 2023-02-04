@@ -35,73 +35,99 @@ function turnOff(){
 }
 function turnOnlyWater(){
     alert("Запуск режима вода");
+    let timeout = 250;
     $.ajax({
         url:'/api/onlyWater',
         type: 'POST',
         cache: false
     });
-    setTimeout(pageFsmShow,250);
-    setTimeout(pageFsmShow,2250);
-    setTimeout(pageFsmShow,8250);
+    setTimeout(pageFsmShow,timeout);
+    timeout += 2000;
+    setTimeout(pageFsmShow,timeout);
+    timeout += 60000
+    setTimeout(pageFsmShow,timeout);
 }
 function turnWaterFoam(){
     alert("Запуск режима вода-пена-вода")
+    let time = 250;
     $.ajax({
         url:'/api/waterAndFoam',
         type: 'POST',
         cache: false
     });
 
-    setTimeout(pageFsmShow,250);
-    setTimeout(pageFsmShow,2250);
-    setTimeout(pageFsmShow,8250);
-    setTimeout(pageFsmShow,14250);
-    setTimeout(pageFsmShow,20250)
+    setTimeout(pageFsmShow,time);
+    time+=2250;
+    setTimeout(pageFsmShow,time);
+    time+=60000;
+    setTimeout(pageFsmShow,time);
+    time+=60000;
+    setTimeout(pageFsmShow,time);
+    time+=60000;
+    setTimeout(pageFsmShow,time)
 }
 
 function turnWaterWax(){
     alert("Запуск режима вода-воск-вода")
+    let time = 250;
     $.ajax({
         url:'/api/waterAndWax',
         type: 'POST',
         cache: false
     });
 
-    setTimeout(pageFsmShow,250);
-    setTimeout(pageFsmShow,2250);
-    setTimeout(pageFsmShow,8250);
-    setTimeout(pageFsmShow,12250);
-    setTimeout(pageFsmShow,18250);
+    setTimeout(pageFsmShow,time);
+    time+=2000;
+    setTimeout(pageFsmShow,time);
+    time+=60000;
+    setTimeout(pageFsmShow,time);
+    time+=40000;
+    setTimeout(pageFsmShow,time);
+    time+=60000;
+    setTimeout(pageFsmShow,time);
 }
 function turnWaterFoamDrying(){
     alert("Запуск режима вода-пена-сушка")
+    let timeout = 250;
     $.ajax({
         url:'/api/waterFoamDrying',
         type: 'POST',
         cache: false
     });
 
-    setTimeout(pageFsmShow,250);
-    setTimeout(pageFsmShow,2250);
-    setTimeout(pageFsmShow,8250);
-    setTimeout(pageFsmShow,14250);
-    setTimeout(pageFsmShow,20250);
-    setTimeout(pageFsmShow,26260);
+    setTimeout(pageFsmShow,timeout);
+    timeout += 2000;
+    setTimeout(pageFsmShow,timeout);
+    timeout += 60000;
+    setTimeout(pageFsmShow,timeout);
+    timeout += 60000;
+    setTimeout(pageFsmShow,timeout);
+    timeout += 60000;
+    setTimeout(pageFsmShow,timeout);
+    timeout += 60000;
+    setTimeout(pageFsmShow,timeout);
 
 }
 function turnWaterFoamWax(){
     alert("Запуск режима вода-пена-вода-воск-вода")
+    let timeout = 250;
     $.ajax({
         url:'/api/waterFoamWax',
         type: 'POST',
         cache: false
     });
-    setTimeout(pageFsmShow,250);
-    setTimeout(pageFsmShow,2250);
-    setTimeout(pageFsmShow,8250);
-    setTimeout(pageFsmShow,14250);
-    setTimeout(pageFsmShow,20250);
-    setTimeout(pageFsmShow,24250);
-    setTimeout(pageFsmShow,30250);
+    setTimeout(pageFsmShow,timeout)
+    timeout+=2000;
+    setTimeout(pageFsmShow,timeout);
+    timeout+=60000;
+    setTimeout(pageFsmShow,timeout);
+    timeout+=60000;
+    setTimeout(pageFsmShow,timeout);
+    timeout+=60000;
+    setTimeout(pageFsmShow,timeout);
+    timeout+=40000;
+    setTimeout(pageFsmShow,timeout);
+    timeout+=60000;
+    setTimeout(pageFsmShow,timeout);
 
 }
